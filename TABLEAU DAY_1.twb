@@ -1,0 +1,3242 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20191.19.0321.1733                               -->
+<workbook original-version='18.1' source-build='2019.1.2 (20191.19.0321.1733)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='TOP N Performers' datatype='integer' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='20'>
+        <calculation class='tableau' formula='20' />
+        <range granularity='1' max='100' min='1' />
+      </column>
+    </datasource>
+    <datasource caption='Ball_by_Ball+ (Multiple Connections)' inline='true' name='federated.15qcg871b93i5119wec9u0kgni5i' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Ball_by_Ball' name='excel-direct.00efrbo1eo302o134hc0g1lof3hx'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/KARNDEEP SINGH/Downloads/IPL Data/IPL Data/Ball_by_Ball.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.00efrbo1eo302o134hc0g1lof3hx' name='Ball_by_Ball' table='[Ball_by_Ball$]' type='table'>
+          <columns gridOrigin='A1:Q10001:no:A1:Q10001:0' header='yes' outcome='6'>
+            <column datatype='integer' name='Match_Id' ordinal='0' />
+            <column datatype='integer' name='Season_Id' ordinal='1' />
+            <column datatype='integer' name='Innings_Id' ordinal='2' />
+            <column datatype='integer' name='Over_Id' ordinal='3' />
+            <column datatype='integer' name='Ball_Id' ordinal='4' />
+            <column datatype='integer' name='Team_Batting_Id' ordinal='5' />
+            <column datatype='integer' name='Team_Bowling_Id' ordinal='6' />
+            <column datatype='integer' name='Striker_Id' ordinal='7' />
+            <column datatype='integer' name='Striker_Batting_Position' ordinal='8' />
+            <column datatype='integer' name='Non_Striker_Id' ordinal='9' />
+            <column datatype='integer' name='Bowler_Id' ordinal='10' />
+            <column datatype='integer' name='Batsman_Scored' ordinal='11' />
+            <column datatype='string' name='Extra_Type' ordinal='12' />
+            <column datatype='integer' name='Extra_Runs' ordinal='13' />
+            <column datatype='integer' name='Player_dissimal_Id' ordinal='14' />
+            <column datatype='string' name='Dissimal_Type' ordinal='15' />
+            <column datatype='integer' name='Fielder_Id' ordinal='16' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Match_Id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Match_Id]</local-name>
+            <parent-name>[Ball_by_Ball]</parent-name>
+            <remote-alias>Match_Id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Season_Id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Season_Id]</local-name>
+            <parent-name>[Ball_by_Ball]</parent-name>
+            <remote-alias>Season_Id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Innings_Id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Innings_Id]</local-name>
+            <parent-name>[Ball_by_Ball]</parent-name>
+            <remote-alias>Innings_Id</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Over_Id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Over_Id]</local-name>
+            <parent-name>[Ball_by_Ball]</parent-name>
+            <remote-alias>Over_Id</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ball_Id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Ball_Id]</local-name>
+            <parent-name>[Ball_by_Ball]</parent-name>
+            <remote-alias>Ball_Id</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Team_Batting_Id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Team_Batting_Id]</local-name>
+            <parent-name>[Ball_by_Ball]</parent-name>
+            <remote-alias>Team_Batting_Id</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Team_Bowling_Id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Team_Bowling_Id]</local-name>
+            <parent-name>[Ball_by_Ball]</parent-name>
+            <remote-alias>Team_Bowling_Id</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Striker_Id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Striker_Id]</local-name>
+            <parent-name>[Ball_by_Ball]</parent-name>
+            <remote-alias>Striker_Id</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Striker_Batting_Position</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Striker_Batting_Position]</local-name>
+            <parent-name>[Ball_by_Ball]</parent-name>
+            <remote-alias>Striker_Batting_Position</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Non_Striker_Id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Non_Striker_Id]</local-name>
+            <parent-name>[Ball_by_Ball]</parent-name>
+            <remote-alias>Non_Striker_Id</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Bowler_Id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Bowler_Id]</local-name>
+            <parent-name>[Ball_by_Ball]</parent-name>
+            <remote-alias>Bowler_Id</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Batsman_Scored</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Batsman_Scored]</local-name>
+            <parent-name>[Ball_by_Ball]</parent-name>
+            <remote-alias>Batsman_Scored</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Extra_Type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Extra_Type]</local-name>
+            <parent-name>[Ball_by_Ball]</parent-name>
+            <remote-alias>Extra_Type</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Extra_Runs</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Extra_Runs]</local-name>
+            <parent-name>[Ball_by_Ball]</parent-name>
+            <remote-alias>Extra_Runs</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Player_dissimal_Id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Player_dissimal_Id]</local-name>
+            <parent-name>[Ball_by_Ball]</parent-name>
+            <remote-alias>Player_dissimal_Id</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Dissimal_Type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Dissimal_Type]</local-name>
+            <parent-name>[Ball_by_Ball]</parent-name>
+            <remote-alias>Dissimal_Type</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fielder_Id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Fielder_Id]</local-name>
+            <parent-name>[Ball_by_Ball]</parent-name>
+            <remote-alias>Fielder_Id</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Ball_by_Ball]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:Q10001:no:A1:Q10001:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Ball Id' datatype='integer' name='[Ball_Id]' role='dimension' type='ordinal' />
+      <column caption='Bowler Id' datatype='integer' name='[Bowler_Id]' role='dimension' type='ordinal' />
+      <column caption='strike rate' datatype='real' name='[Calculation_1014998812955160576]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([Batsman_Scored])/COUNT([Ball_Id])*100' />
+      </column>
+      <column caption='Dissimal Type' datatype='string' name='[Dissimal_Type]' role='dimension' type='nominal' />
+      <column caption='Extra Runs' datatype='integer' name='[Extra_Runs]' role='measure' type='quantitative' />
+      <column caption='Extra Type' datatype='string' name='[Extra_Type]' role='dimension' type='nominal' />
+      <column caption='Fielder Id' datatype='integer' name='[Fielder_Id]' role='dimension' type='ordinal' />
+      <column caption='Innings Id' datatype='integer' name='[Innings_Id]' role='dimension' type='ordinal' />
+      <column caption='Match Id' datatype='integer' name='[Match_Id]' role='dimension' type='ordinal' />
+      <column caption='Non Striker Id' datatype='integer' name='[Non_Striker_Id]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Over Id' datatype='integer' name='[Over_Id]' role='dimension' type='ordinal' />
+      <column caption='Player Name' datatype='string' name='[Player_Name]' role='dimension' type='nominal' />
+      <column caption='Player dissimal Id' datatype='integer' name='[Player_dissimal_Id]' role='dimension' type='ordinal' />
+      <column caption='Season Id' datatype='integer' name='[Season_Id]' role='dimension' type='ordinal' />
+      <column caption='Striker Batting Position' datatype='integer' name='[Striker_Batting_Position]' role='measure' type='quantitative' />
+      <column caption='Striker Id' datatype='integer' name='[Striker_Id]' role='dimension' type='ordinal' />
+      <column caption='Team Batting Id' datatype='integer' name='[Team_Batting_Id]' role='dimension' type='ordinal' />
+      <column caption='Team Bowling Id' datatype='integer' name='[Team_Bowling_Id]' role='dimension' type='ordinal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.662058' measure-ordering='alphabetic' measure-percentage='0.294931' parameter-percentage='0.0430108' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+    <datasource caption='Player (Player)' inline='true' name='federated.17ku70y0cb3r0h1drl8sk0766wue' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Player' name='excel-direct.08t7lna1eqi2w917tswzc007i6v5'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/KARNDEEP SINGH/Downloads/IPL Data/IPL Data/Player.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.08t7lna1eqi2w917tswzc007i6v5' name='Player' table='[Player$]' type='table'>
+          <columns gridOrigin='A1:H524:no:A1:H524:0' header='yes' outcome='2'>
+            <column datatype='integer' name='Player_Id' ordinal='0' />
+            <column datatype='string' name='Player_Name' ordinal='1' />
+            <column datatype='string' name='DOB' ordinal='2' />
+            <column datatype='string' name='Batting_Hand' ordinal='3' />
+            <column datatype='string' name='Bowling_Skill' ordinal='4' />
+            <column datatype='string' name='Country' ordinal='5' />
+            <column datatype='integer' name='Is_Umpire' ordinal='6' />
+            <column datatype='integer' name='F8' ordinal='7' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Player_Id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Player_Id]</local-name>
+            <parent-name>[Player]</parent-name>
+            <remote-alias>Player_Id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Player_Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Player_Name]</local-name>
+            <parent-name>[Player]</parent-name>
+            <remote-alias>Player_Name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DOB</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[DOB]</local-name>
+            <parent-name>[Player]</parent-name>
+            <remote-alias>DOB</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Batting_Hand</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Batting_Hand]</local-name>
+            <parent-name>[Player]</parent-name>
+            <remote-alias>Batting_Hand</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Bowling_Skill</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Bowling_Skill]</local-name>
+            <parent-name>[Player]</parent-name>
+            <remote-alias>Bowling_Skill</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[Player]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Is_Umpire</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Is_Umpire]</local-name>
+            <parent-name>[Player]</parent-name>
+            <remote-alias>Is_Umpire</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F8</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F8]</local-name>
+            <parent-name>[Player]</parent-name>
+            <remote-alias>F8</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Player]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:H524:no:A1:H524:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Batting Hand' datatype='string' name='[Batting_Hand]' role='dimension' type='nominal' />
+      <column caption='Bowling Skill' datatype='string' name='[Bowling_Skill]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Is Umpire' datatype='integer' name='[Is_Umpire]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Player Id' datatype='integer' name='[Player_Id]' role='dimension' type='ordinal' />
+      <column caption='Player Name' datatype='string' name='[Player_Name]' role='dimension' type='nominal' />
+      <column-instance column='[Player_Name]' derivation='None' name='[none:Player_Name:nk]' pivot='key' type='nominal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.52071' measure-ordering='alphabetic' measure-percentage='0.47929' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Player_Name:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;A Mishra&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;AD Mathews&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;AT Rayudu&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;BMAJ Mendis&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;D du Preez&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;DNT Zoysa&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;GD McGrath&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;IR Jaggi&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;JM Kemp&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;KK Nair&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;M de Lange&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;MEK Hussey&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;MR Marsh&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;P Kumar&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;R Bhatia&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;RN ten Doeschate&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;S Kaul&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;SB Joshi&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;SM Pollock&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;SW Tait&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;V Pratap Singh&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;YK Pathan&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;AB Dinda&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Ankit Sharma&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;BB McCullum&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;BB Samantray&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;CJ Jordan&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;DJ Harris&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;ER Dwivedi&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;HM Amla&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;JD Unadkat&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Karanveer Singh&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;LA Carseldine&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;MA Khote&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;MM Sharma&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;NL McCullum&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;PM Sarvesh Kumar&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;RA Jadeja&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;RV Gomez&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;SA Abbott&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Shoaib Malik&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;SS Shaikh&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;TR Birt&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;WP Saha&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>%many-values%</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;AC Gilchrist&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;AP Tare&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Bipul Sharma&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;D Wiese&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;DJ Muthuswami&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;FY Fazal&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;IC Pandey&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;JEC Franklin&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;KD Karthik&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;LPC Silva&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;MC Henriques&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Mohammad Asif&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Mohammad Hafeez&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;NV Ojha&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;PSP Handscomb&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;RG Sharma&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;S Badrinath&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Salman Butt&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;SK Warne&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Sunny Gupta&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Umar Gul&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Y Nagar&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;JH Kallis&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;A Nehra&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;A Zampa&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;AG Paunikar&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;B Chipli&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;C Nanda&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;DA Miller&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;GR Napier&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;J Suchith&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;JP Faulkner&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;KP Appanna&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;M Manhas&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;MJ Clarke&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;MS Wade&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;PA Patel&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;R McLaren&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;RR Powar&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;S Narwal&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;SD Chitnis&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Sohail Tanvir&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;T Taibu&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;VRV Singh&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;YV Takawale&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;A Mithun&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;AD Nath&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;AUK Pathan&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;BR Dunk&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;D Kalyankrishna&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;DP Nannes&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;GH Vihari&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Ishan Kishan&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;JO Holder&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;KL Rahul&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;M Kaif&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;MF Maharoof&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;MS Bisla&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;P Negi&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;R Bishnoi&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;RP Singh&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;S Kaushik&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;SB Styris&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;SMSM Senanayake&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Swapnil Singh&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;V Sehwag&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Younis Khan&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;A Chopra&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;AC Thomas&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;AR Patel&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;BJ Haddin&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;CM Gautam&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;DJ Thornely&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;G Gambhir&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;IK Pathan&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;JR Hopes&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;KH Pandya&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;LR Shukla&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;MC Juneja&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;N Rana&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;OA Shah&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;PV Tambe&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;RJ Harris&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;S Chanderpaul&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Sandeep Sharma&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;SL Malinga&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Sunny Singh&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;UT Khawaja&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Y Venugopal Rao&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;V Kohli&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;AB Barath&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;AN Ghosh&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;BAW Mendis&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;CJ Anderson&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;DH Yagnik&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;DW Steyn&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;HH Gibbs&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;JC Buttler&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Kamran Akmal&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;L Balaji&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;M Vohra&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;ML Hayden&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;NJ Rimmington&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;PJ Cummins&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;R Tewatia&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;RS Sodhi&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;S Tyagi&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Shoaib Ahmed&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;SR Watson&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;TM Head&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;A Ashish Reddy&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;AB McDonald&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Anureet Singh&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;BB Sran&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;CJ McKay&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;DJ Hooda&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;F Behardien&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;HV Patel&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;JDP Oram&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;KB Arun Karthik&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;LA Pomersbach&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;MA Starc&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;MN Samuels&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;NLTC Perera&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;PP Chawla&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;RE Levi&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;RV Uthappa&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;SA Asnodkar&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;SJ Srivastava&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;SS Tiwary&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;U Kaul&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;WPUJC Vaas&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;AA Noffke&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;AM Rahane&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;B Sumanth&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;CH Gayle&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;DB Ravi Teja&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;DT Christian&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Harmeet Singh&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;JA Morkel&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;KA Pollard&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;KW Richardson&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;M Rawat&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;MK Pandey&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;ND Doshi&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;PC Valthaty&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;R Sharma&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;RS Bopara&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;RT Ponting&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Shakib Al Hasan&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;SPD Smith&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;TL Suman&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;VY Mahesh&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;A Flintoff&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;AC Voges&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;AS Rajpoot&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;BJ Hodge&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;CR Brathwaite&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;DJG Sammy&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;GB Hogg&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Imran Tahir&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;JJ Bumrah&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;KJ Abbott&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;LRPL Taylor&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;MD Mishra&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Mohammed Shami&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;P Awana&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Q de Kock&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;RJ Peterson&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;S Dhawan&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;SB Bangar&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;SM Harwood&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;SV Samson&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;UT Yadav&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;YA Abdulla&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;AA Bilakhia&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;AJ Finch&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;B Kumar&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;CA Ingram&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;DA Warner&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;DR Smith&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Gurkeerat Singh&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;J Syed Mohammad&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;KP Pietersen&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;M Morkel&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;MJ Guptill&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;MV Boucher&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;PA Reddy&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;R Ninan&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;RR Raje&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;S Rana&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;SE Bond&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;SP Fleming&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;T Thushara&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;VS Malik&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;W Jaffer&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Z Khan&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;A Singh&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;AA Chavan&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;AL Menaria&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;B Laughlin&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;CA Lynn&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;DAJ Bracewell&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;DS Kulkarni&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;H Das&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;J Theron&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;K Goel&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;KS Williamson&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;M Muralitharan&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;MJ Lumb&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Pankaj Singh&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;R Rampaul&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;RR Rossouw&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;S Randiv&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;SE Marsh&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;SP Goswami&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;TD Paine&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;VS Yeligati&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;AB Agarkar&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;AN Ahmed&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;BA Bhatt&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;CH Morris&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;DE Bollinger&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;DT Patil&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Harpreet Singh&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Jaskaran Singh&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;KAJ Roach&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;L Ablish&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;M Vijay&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;MK Tiwary&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;NJ Maddinson&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;PD Collingwood&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;R Shukla&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;RS Gavaskar&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;S Sriram&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;SR Tendulkar&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;TM Dilshan&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;WD Parnell&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;AB de Villiers&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Anirudh Singh&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;C Madan&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;CJ Ferguson&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;DJ Bravo&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;EJG Morgan&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;HH Pandya&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;JD Ryder&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Kamran Khan&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;L Ronchi&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;MA Agarwal&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;MM Patel&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;NK Patel&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;PJ Sangwan&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;R Vinay Kumar&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;S Sreesanth&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;S Vidyut&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Shoaib Akhtar&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;SS Iyer&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;TM Srivastava&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;A Symonds&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;AD Russell&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Azhar Mahmood&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;D Salunkhe&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;DJ Hussey&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;DP Vijaykumar&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;GJ Bailey&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;J Arunkumar&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Joginder Sharma&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;KM Jadhav&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;M Kartik&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;MG Johnson&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;MS Dhoni&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;P Parameswaran&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;R Dhawan&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;RR Bhatkal&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;S Ladda&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;SB Wagh&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;SN Khan&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;T Henderson&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;VH Zol&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;YS Chahal&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;R Dravid&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;A Kumble&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;AD Mascarenhas&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;AS Raut&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;BJ Rohrer&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;CRD Fernando&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;DL Vettori&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;GC Smith&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Iqbal Abdulla&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;JJ van der Wath&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;KK Cooper&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;M Ashwin&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;MDKJ Perera&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;MP Stoinis&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;P Dogra&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;R Ashwin&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;RJ Quiney&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;S Gopal&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;SB Jakati&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;SM Katich&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;SW Billings&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;WA Mota&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Yashpal Singh&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Abdur Razzak&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;AP Dole&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;BCJ Cutting&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;CK Kapugedera&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;CL White&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;DR Martyn&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;F du Plessis&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;I Malhotra&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;JDS Neesham&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;KC Cariappa&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;LJ Wright&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Mandeep Singh&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;MN van Wyk&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;NM Coulter-Nile&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;PP Ojha&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;RE van der Merwe&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;S Anirudha&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;SA Yadav&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;SK Raina&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;ST Jayasuriya&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;UA Birla&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;X Thalaivan Sargunam&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;AA Jhunjhunwala&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;AM Nayar&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;B Lee&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;CA Pujara&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;DB Das&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;DS Lehmann&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Harbhajan Singh&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;J Yadav&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;K Upadhyay&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;KV Sharma&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;M Ntini&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;MJ McClenaghan&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;N Saini&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Parvez Rasool&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;RR Sarwan&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;S Sohal&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Shahid Afridi&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;SP Narine&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;TG Southee&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;VVS Laxman&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;A Mukund&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;A Uniyal&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;AG Murtaza&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;B Akhil&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;C Munro&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;DPMD Jayawardene&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;GJ Maxwell&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;J Botha&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;JP Duminy&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;KMDN Kulasekara&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;M Klinger&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Misbah-ul-Haq&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;MS Gony&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;P Sahu&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;R Sathish&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;RR Pant&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;S Nadeem&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Shivam Sharma&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;SN Thakur&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;T Kohli&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;VR Aaron&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Yuvraj Singh&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;SC Ganguly&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;A Chandila&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;AC Blizzard&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;AP Majumdar&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;BE Hendricks&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;CK Langeveldt&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;DJ Jacobs&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;FH Edwards&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;I Sharma&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;JE Taylor&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;KC Sangakkara&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;LMP Simmons&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Mashrafe Mortaza&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Mohammad Ashraful&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;NS Naik&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;PR Shah&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;RG More&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;S Aravind&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Sachin Baby&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;SK Trivedi&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;STR Binny&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;UBT Chand&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Y Gnaneswara Rao&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+    <datasource caption='Player (Bowler Id)' inline='true' name='federated.0hbf5df17w535x18qpjpy04uetcg' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Player' name='excel-direct.1g08dl81860gdi13iw8mu1mroilq'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/KARNDEEP SINGH/Downloads/IPL Data/IPL Data/Player.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1g08dl81860gdi13iw8mu1mroilq' name='Player' table='[Player$]' type='table'>
+          <columns gridOrigin='A1:H524:no:A1:H524:0' header='yes' outcome='2'>
+            <column datatype='integer' name='Player_Id' ordinal='0' />
+            <column datatype='string' name='Player_Name' ordinal='1' />
+            <column datatype='string' name='DOB' ordinal='2' />
+            <column datatype='string' name='Batting_Hand' ordinal='3' />
+            <column datatype='string' name='Bowling_Skill' ordinal='4' />
+            <column datatype='string' name='Country' ordinal='5' />
+            <column datatype='integer' name='Is_Umpire' ordinal='6' />
+            <column datatype='integer' name='F8' ordinal='7' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Player_Id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Player_Id]</local-name>
+            <parent-name>[Player]</parent-name>
+            <remote-alias>Player_Id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Player_Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Player_Name]</local-name>
+            <parent-name>[Player]</parent-name>
+            <remote-alias>Player_Name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DOB</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[DOB]</local-name>
+            <parent-name>[Player]</parent-name>
+            <remote-alias>DOB</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Batting_Hand</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Batting_Hand]</local-name>
+            <parent-name>[Player]</parent-name>
+            <remote-alias>Batting_Hand</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Bowling_Skill</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Bowling_Skill]</local-name>
+            <parent-name>[Player]</parent-name>
+            <remote-alias>Bowling_Skill</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[Player]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Is_Umpire</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Is_Umpire]</local-name>
+            <parent-name>[Player]</parent-name>
+            <remote-alias>Is_Umpire</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F8</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F8]</local-name>
+            <parent-name>[Player]</parent-name>
+            <remote-alias>F8</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Player]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:H524:no:A1:H524:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Batting Hand' datatype='string' name='[Batting_Hand]' role='dimension' type='nominal' />
+      <column caption='Bowling Skill' datatype='string' name='[Bowling_Skill]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Is Umpire' datatype='integer' name='[Is_Umpire]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Player Id' datatype='integer' name='[Player_Id]' role='dimension' type='ordinal' />
+      <column caption='Player Name' datatype='string' name='[Player_Name]' role='dimension' type='nominal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.52071' measure-ordering='alphabetic' measure-percentage='0.47929' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <datasource-relationships>
+    <datasource-dependencies datasource='federated.0hbf5df17w535x18qpjpy04uetcg'>
+      <column caption='Player Id' datatype='integer' name='[Player_Id]' role='dimension' type='ordinal' />
+      <column-instance column='[Player_Id]' derivation='None' name='[none:Player_Id:ok]' pivot='key' type='ordinal' />
+    </datasource-dependencies>
+    <datasource-dependencies datasource='federated.15qcg871b93i5119wec9u0kgni5i'>
+      <column caption='Bowler Id' datatype='integer' name='[Bowler_Id]' role='dimension' type='ordinal' />
+      <column caption='Striker Id' datatype='integer' name='[Striker_Id]' role='dimension' type='ordinal' />
+      <column-instance column='[Bowler_Id]' derivation='None' name='[none:Bowler_Id:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Striker_Id]' derivation='None' name='[none:Striker_Id:ok]' pivot='key' type='ordinal' />
+    </datasource-dependencies>
+    <datasource-dependencies datasource='federated.17ku70y0cb3r0h1drl8sk0766wue'>
+      <column caption='Player Id' datatype='integer' name='[Player_Id]' role='dimension' type='ordinal' />
+      <column-instance column='[Player_Id]' derivation='None' name='[none:Player_Id:ok]' pivot='key' type='ordinal' />
+    </datasource-dependencies>
+    <datasource-relationship source='federated.15qcg871b93i5119wec9u0kgni5i' target='federated.0hbf5df17w535x18qpjpy04uetcg'>
+      <column-mapping>
+        <map key='[federated.15qcg871b93i5119wec9u0kgni5i].[none:Bowler_Id:ok]' value='[federated.0hbf5df17w535x18qpjpy04uetcg].[none:Player_Id:ok]' />
+      </column-mapping>
+    </datasource-relationship>
+    <datasource-relationship source='federated.15qcg871b93i5119wec9u0kgni5i' target='federated.17ku70y0cb3r0h1drl8sk0766wue'>
+      <column-mapping>
+        <map key='[federated.15qcg871b93i5119wec9u0kgni5i].[none:Striker_Id:ok]' value='[federated.17ku70y0cb3r0h1drl8sk0766wue].[none:Player_Id:ok]' />
+      </column-mapping>
+    </datasource-relationship>
+  </datasource-relationships>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Ball_by_Ball+ (Multiple Connections)' name='federated.15qcg871b93i5119wec9u0kgni5i' />
+            <datasource name='Parameters' />
+            <datasource caption='Player (Player)' name='federated.17ku70y0cb3r0h1drl8sk0766wue' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='TOP N Performers' datatype='integer' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='20'>
+              <calculation class='tableau' formula='20' />
+              <range granularity='1' max='100' min='1' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.15qcg871b93i5119wec9u0kgni5i'>
+            <column datatype='integer' name='[Batsman_Scored]' role='measure' type='quantitative' />
+            <column caption='Striker Id' datatype='integer' name='[Striker_Id]' role='dimension' type='ordinal' />
+            <column-instance column='[Striker_Id]' derivation='None' name='[none:Striker_Id:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Batsman_Scored]' derivation='Sum' name='[sum:Batsman_Scored:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.17ku70y0cb3r0h1drl8sk0766wue'>
+            <column caption='Player Name' datatype='string' name='[Player_Name]' role='dimension' type='nominal' />
+            <column-instance column='[Player_Name]' derivation='None' name='[none:Player_Name:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.15qcg871b93i5119wec9u0kgni5i].[none:Striker_Id:ok]'>
+            <groupfilter count='[Parameters].[Parameter 1]' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([Batsman_Scored])' function='order' user:ui-marker='order'>
+                <groupfilter from='1' function='range' level='[none:Striker_Id:ok]' to='434' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.17ku70y0cb3r0h1drl8sk0766wue].[none:Player_Name:nk]'>
+            <groupfilter function='level-members' level='[none:Player_Name:nk]' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.15qcg871b93i5119wec9u0kgni5i].[none:Striker_Id:ok]' direction='DESC' measure-to-sort-by='[federated.15qcg871b93i5119wec9u0kgni5i].[sum:Batsman_Scored:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.15qcg871b93i5119wec9u0kgni5i].[none:Striker_Id:ok]</column>
+            <column>[federated.17ku70y0cb3r0h1drl8sk0766wue].[none:Player_Name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.17ku70y0cb3r0h1drl8sk0766wue].[none:Player_Name:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.15qcg871b93i5119wec9u0kgni5i].[sum:Batsman_Scored:qk]</rows>
+        <cols>([federated.15qcg871b93i5119wec9u0kgni5i].[none:Striker_Id:ok] / [federated.17ku70y0cb3r0h1drl8sk0766wue].[none:Player_Name:nk])</cols>
+      </table>
+      <simple-id uuid='{035330A3-0495-49BB-99BD-A740EDDF5674}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Ball_by_Ball+ (Multiple Connections)' name='federated.15qcg871b93i5119wec9u0kgni5i' />
+            <datasource name='Parameters' />
+            <datasource caption='Player (Bowler Id)' name='federated.0hbf5df17w535x18qpjpy04uetcg' />
+            <datasource caption='Player (Player)' name='federated.17ku70y0cb3r0h1drl8sk0766wue' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='TOP N Performers' datatype='integer' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='20'>
+              <calculation class='tableau' formula='20' />
+              <range granularity='1' max='100' min='1' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.0hbf5df17w535x18qpjpy04uetcg'>
+            <column caption='Player Name' datatype='string' name='[Player_Name]' role='dimension' type='nominal' />
+            <column-instance column='[Player_Name]' derivation='None' name='[none:Player_Name:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.15qcg871b93i5119wec9u0kgni5i'>
+            <column caption='Bowler Id' datatype='integer' name='[Bowler_Id]' role='dimension' type='ordinal' />
+            <column caption='Dissimal Type' datatype='string' name='[Dissimal_Type]' role='dimension' type='nominal' />
+            <column-instance column='[Dissimal_Type]' derivation='Count' name='[cnt:Dissimal_Type:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Bowler_Id]' derivation='None' name='[none:Bowler_Id:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Dissimal_Type]' derivation='None' name='[none:Dissimal_Type:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.17ku70y0cb3r0h1drl8sk0766wue'>
+            <column caption='Player Id' datatype='integer' name='[Player_Id]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.15qcg871b93i5119wec9u0kgni5i].[none:Bowler_Id:ok]'>
+            <groupfilter count='[Parameters].[Parameter 1]' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='COUNT([Dissimal_Type])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:Bowler_Id:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.15qcg871b93i5119wec9u0kgni5i].[none:Dissimal_Type:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter from='&quot;bowled&quot;' function='range' level='[none:Dissimal_Type:nk]' to='&quot;caught and bowled&quot;' />
+              <groupfilter function='member' level='[none:Dissimal_Type:nk]' member='&quot;lbw&quot;' />
+              <groupfilter function='member' level='[none:Dissimal_Type:nk]' member='&quot;run out&quot;' />
+              <groupfilter function='member' level='[none:Dissimal_Type:nk]' member='&quot;stumped&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.15qcg871b93i5119wec9u0kgni5i].[none:Dissimal_Type:nk]</column>
+            <column>[federated.15qcg871b93i5119wec9u0kgni5i].[none:Bowler_Id:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.15qcg871b93i5119wec9u0kgni5i].[cnt:Dissimal_Type:qk]</rows>
+        <cols>([federated.15qcg871b93i5119wec9u0kgni5i].[none:Bowler_Id:ok] / [federated.0hbf5df17w535x18qpjpy04uetcg].[none:Player_Name:nk])</cols>
+        <join-lod-include-overrides>
+          <column>[federated.17ku70y0cb3r0h1drl8sk0766wue].[Player_Id]</column>
+        </join-lod-include-overrides>
+      </table>
+      <simple-id uuid='{E584807A-4872-4432-8D87-D7DAC22177BC}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Ball_by_Ball+ (Multiple Connections)' name='federated.15qcg871b93i5119wec9u0kgni5i' />
+            <datasource name='Parameters' />
+            <datasource caption='Player (Player)' name='federated.17ku70y0cb3r0h1drl8sk0766wue' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='TOP N Performers' datatype='integer' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='20'>
+              <calculation class='tableau' formula='20' />
+              <range granularity='1' max='100' min='1' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.15qcg871b93i5119wec9u0kgni5i'>
+            <column caption='Ball Id' datatype='integer' name='[Ball_Id]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Batsman_Scored]' role='measure' type='quantitative' />
+            <column caption='strike rate' datatype='real' name='[Calculation_1014998812955160576]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([Batsman_Scored])/COUNT([Ball_Id])*100' />
+            </column>
+            <column caption='Striker Id' datatype='integer' name='[Striker_Id]' role='dimension' type='ordinal' />
+            <column-instance column='[Striker_Id]' derivation='None' name='[none:Striker_Id:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_1014998812955160576]' derivation='User' name='[usr:Calculation_1014998812955160576:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.17ku70y0cb3r0h1drl8sk0766wue'>
+            <column caption='Player Name' datatype='string' name='[Player_Name]' role='dimension' type='nominal' />
+            <column-instance column='[Player_Name]' derivation='None' name='[none:Player_Name:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.15qcg871b93i5119wec9u0kgni5i].[none:Striker_Id:ok]'>
+            <groupfilter count='[Parameters].[Parameter 1]' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='[Calculation_1014998812955160576]' function='order' user:ui-marker='order'>
+                <groupfilter expression='SUM([Batsman_Scored]) &gt; 1000' function='filter' user:ui-filter-by-field='true' user:ui-marker='filter-by'>
+                  <groupfilter function='level-members' level='[none:Striker_Id:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+                </groupfilter>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.15qcg871b93i5119wec9u0kgni5i].[none:Striker_Id:ok]' direction='DESC' measure-to-sort-by='[federated.15qcg871b93i5119wec9u0kgni5i].[usr:Calculation_1014998812955160576:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.15qcg871b93i5119wec9u0kgni5i].[none:Striker_Id:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.15qcg871b93i5119wec9u0kgni5i].[usr:Calculation_1014998812955160576:qk]</rows>
+        <cols>([federated.15qcg871b93i5119wec9u0kgni5i].[none:Striker_Id:ok] / [federated.17ku70y0cb3r0h1drl8sk0766wue].[none:Player_Name:nk])</cols>
+      </table>
+      <simple-id uuid='{E199A1DD-B519-44A8-BAAD-29CD38C72C83}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{0D3CC10B-09A9-427B-9525-670680D8E544}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Dashboard 1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones />
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='3' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='4' param='vert' type='layout-flow' w='98400' x='800' y='1000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{528BF785-AD04-4611-82F1-540CFEADC83C}' />
+    </dashboard>
+    <dashboard name='Dashboard 2'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <datasources>
+        <datasource name='Parameters' />
+      </datasources>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='TOP N Performers' datatype='integer' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='20'>
+          <calculation class='tableau' formula='20' />
+          <range granularity='1' max='100' min='1' />
+        </column>
+      </datasource-dependencies>
+      <zones>
+        <zone h='50125' id='6' name='Sheet 2' w='59400' x='-800' y='36500' />
+        <zone h='33250' id='7' name='Sheet 3' w='33300' x='62300' y='4750' />
+        <zone h='33250' id='8' name='Sheet 1' w='33300' x='7200' y='4000' />
+        <zone h='6000' id='10' mode='type_in' param='[Parameters].[Parameter 1]' type='paramctrl' w='16000' x='42000' y='5875' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='900' minheight='900' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='11' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='12' param='vert' type='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='266' h='33250' id='8' is-fixed='true' name='Sheet 1' w='33300' x='7200' y='4000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='266' h='33250' id='7' is-fixed='true' name='Sheet 3' w='33300' x='62300' y='4750'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6000' id='10' mode='type_in' param='[Parameters].[Parameter 1]' type='paramctrl' w='16000' x='42000' y='5875'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='50125' id='6' is-fixed='true' name='Sheet 2' w='59400' x='-800' y='36500'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{591E246C-2936-43A7-A430-B705F873EDB3}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='82'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.17ku70y0cb3r0h1drl8sk0766wue].[none:Player_Name:nk]' type='color' />
+            <card mode='type_in' param='[Parameters].[Parameter 1]' type='parameter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.15qcg871b93i5119wec9u0kgni5i].[none:Player_Name:nk]</field>
+            <field>[federated.15qcg871b93i5119wec9u0kgni5i].[none:Striker_Id:ok]</field>
+            <field>[federated.17ku70y0cb3r0h1drl8sk0766wue].[none:Player_Id:ok]</field>
+            <field>[federated.17ku70y0cb3r0h1drl8sk0766wue].[none:Player_Name:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{DE6FF358-C3D2-44C3-8F5E-145BDE7A2A28}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='slider' param='[Parameters].[Parameter 1]' type='parameter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0hbf5df17w535x18qpjpy04uetcg].[none:Player_Name:nk]</field>
+            <field>[federated.15qcg871b93i5119wec9u0kgni5i].[none:Bowler_Id:ok]</field>
+            <field>[federated.15qcg871b93i5119wec9u0kgni5i].[none:Dissimal_Type:nk]</field>
+            <field>[federated.15qcg871b93i5119wec9u0kgni5i].[none:Player_dissimal_Id:ok]</field>
+            <field>[federated.17ku70y0cb3r0h1drl8sk0766wue].[none:Player_Name:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{A500FD52-5CA1-4ED1-B51B-56381180AE76}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.15qcg871b93i5119wec9u0kgni5i].[none:Striker_Id:ok]</field>
+            <field>[federated.17ku70y0cb3r0h1drl8sk0766wue].[none:Player_Name:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{1B37C0C6-CF56-4FE4-9A28-445495864AA8}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{30D42DB5-8693-46AD-8698-DE21C89A2BF9}' />
+    </window>
+    <window class='worksheet' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E47591D7-9D01-45E9-A52B-37612500081B}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 2'>
+      <viewpoints>
+        <viewpoint name='Sheet 1'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 2'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 3'>
+          <zoom type='entire-view' />
+          <selection-collection>
+            <tuple-selection>
+              <tuple-reference>
+                <tuple-descriptor>
+                  <pane-descriptor>
+                    <x-fields>
+                      <field>[federated.15qcg871b93i5119wec9u0kgni5i].[none:Striker_Id:ok]</field>
+                      <field>[federated.17ku70y0cb3r0h1drl8sk0766wue].[none:Player_Name:nk]</field>
+                    </x-fields>
+                    <y-fields>
+                      <field>[federated.15qcg871b93i5119wec9u0kgni5i].[usr:Calculation_1014998812955160576:qk]</field>
+                    </y-fields>
+                  </pane-descriptor>
+                  <columns>
+                    <field>[federated.15qcg871b93i5119wec9u0kgni5i].[none:Striker_Id:ok]</field>
+                    <field>[federated.17ku70y0cb3r0h1drl8sk0766wue].[none:Player_Name:nk]</field>
+                    <field>[federated.15qcg871b93i5119wec9u0kgni5i].[usr:Calculation_1014998812955160576:qk]</field>
+                  </columns>
+                </tuple-descriptor>
+                <tuple>
+                  <value>162</value>
+                  <value>&quot;CH Gayle&quot;</value>
+                  <value>146.0593220338983</value>
+                </tuple>
+              </tuple-reference>
+            </tuple-selection>
+          </selection-collection>
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{8671417E-BB69-4412-AEA2-E331F49C0EF7}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Dashboard 2' width='192'>
+      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
+      SUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAgAElEQVR4nO2dZ29kWXrffzdUjqxiTs1ukt3s3D1hV+tZS7urXUmWAMOwAL8xDCz0AfwZ
+      /M5fwO8MLPTGBiwYBtaSINjQQpK1YTQ7oacjcyaLFVg53ugXbLLJIeveqhbDdNf5AQP28D48
+      zzn33v+5Jz3nSLZt2wgEPYp81RkQCK4SIQBBTyMEIDh39lPr/OrXvyGdL5HL5o9+/+rF1ywt
+      vKSmnf13mc0lUsU62DavXr06+v3u4lNSVQOAT3/5d3z55AlL8y/RTfe8GI08f/fLL0ivr7Bf
+      b526rnZVMoGgA149e0Z46j4hucx//fO/5ve/f4/VjMZA0kuzkCNTaDAyEGVja5tEcoj1pRfc
+      +c4PMLZXqfbJPPunVdL5Erdv3wZslveK/MubB6/qXq7M1Nh11l48IRiOsPDyBfG+GNHxW2TX
+      5tG1Fp5wgkZuncjwTe5P+nn25deojXH6FT+LX63gjw+yszSPrXrEF0Bw/nz4yQ+JNLf5zXya
+      69dvoGhlZh9/h2Yhh65pPF1YJbv6koIGktnEDiSYHR8AIL+9QmhslrD/4IU3GiUUfwzpddrl
+      /T28rYNPyNryEo3yPnVfkl/9/L9jK/BicRtFUdgvt/jw4RwA9x8/5OmXX1NIb5Ep1FheW8GQ
+      fPhVRXwBBOdPuZAlW1P56ME9dvwvCIYj9CUCRO/cx7bhw2CAuiFhbayRGBwhmhwGYOj6bRK+
+      KJtLi8zevgvA2sI8U7ceH6X9/R/8hBvTNwj7FBQJMpEYQ6PD7CUG+PDD7xBUFYLxGP0ffYgs
+      SajBJDdn+xgM2SQnxlHxkuhPIFkSHgWkixoGbbVa+Hy+K7PVNA1VVZFl94/cRfg3jIM2q6q6
+      1zEX4d+yLAzDwOv1Xon/bmyd7ErlErFozNHWaFbIVU2G++NHv9N1HVmWURTF0feFNYFareMd
+      DptKKU+5Wse2Ler1hoMt2LZNYT9Lo6U7ptuoVUil9qhVq6RSKQqlytE1XdexLOtYoiaVSg3L
+      1MntFziu+6M0bZt6vQ5AvVqmWKlhaE0y2f0j+2/mtVqpYAOVUoFK7U25TNPENA96aa1GA8Oy
+      0Jp1cvtFWo2D/BbL1TP924ChtdB0E8vQyOWLHGb3uH/L1EmnM5iWTbmYp6kZb65ZFrp+7P7Z
+      NpVKBdsyyWYy6Oabe3M8Tdu2yGXT1Bqtg2fVaLa9/wfPoIpuWuitBpphtbVtNarsF0pYps5e
+      KkWl1jzTzrZt8rkMlVoTQ2vSahkcr6KP2+qtBtlcHsUfxmNrNPU35T/+/Jv1OqZt02rU2C+U
+      sE2dVCpFpda4nD6AZZpUa03WVlbYz6Z5sbDkaK9V0mxmqiwuzDvara2uYNoHtazfI7G1m25j
+      aZPaWufF4gqrS0u0qlm2srVTVtVSnq+evsQ2arxcWKXV0igWSzQLO6TKp4cu9GaFX/3yn6hV
+      cixtpGhppwULBi8+/4JCXWNhcZFSapV8S8YjW+zsZU9YNqolvvzyGTYmK/PP2c2WWV5eplZI
+      s1esnkq5XCoiWXXmXy6ynS6wvLTc9l4Vs7t8/vUrapUSlq2zvLp9pp1lGNhILC4skd3bZX55
+      pW2atqnx5Ivfsl+qs/7yt2wXzyo/gM3CwjLZnQ22NtfIFBvIytmvnm2ZmDYsLS5QLJVoVbLs
+      5ipn2i4tLtIo7TH/7AWZusHiGe+VZWk8+/RzKqbFwuIi+e1l1tY2yFVbyLJ8OQKQZAWjVSM5
+      PEr/4AjhgMf5D2QPWq0IivPne3xignoxQ75mUi1VmJ6+fqadpVV5vrhJKZ9Ds1VGJ8fQSuVT
+      duF4kmQsjFkt0JID7Gxv4/coVO0gQ9HTeXn61VdIksXaygaq38/O9lkvlcrktTEAPDKUGgZ+
+      n4d6rcb1qckTloFInMFkDFCYuDaODEiqh/HhfhqN0wIMBfxk8nUG+8Mk+ofwe87+3NumxpMX
+      C2i1IqakkssVmZwYOdNW8XhpVApIqofBkXECnvavyMLzr9Etm2y+xOTEeFs7bFAkm1pDI5oY
+      JhGSWV8/W4CyoqI3Ktiyit+jUNEUhpLhM21VRWa/VCMQClHNZ1E8p5+RLHuZeF1WVbIpN01i
+      A0P0+STWN7cuRwCmVmM7tU+zXie9u0k2k6VYbbT/AxtUj8e1/VwtlWjoFkG/iql6CXnPfgFk
+      b4Sf/PiH3JqdJhnx8vTJIgPjg6fsivtpMpkMeTNIhBo+f4DV9TUkS6epnR50/vB7v8vduVvc
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 2' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 3' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 4' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
